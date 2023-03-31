@@ -1,6 +1,6 @@
 FROM fedora:latest
 
-RUN dnf -y install openssh-server git
+RUN dnf -y install openssh-server git procps-ng
 RUN dnf -y install ed # needed to edit passwd and group
 RUN dnf clean all
 
