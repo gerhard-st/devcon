@@ -1,6 +1,6 @@
 FROM fedora:latest
 
-RUN dnf -y install openssh-server git procps-ng rsync
+RUN dnf -y install openssh-server git procps-ng rsync vim
 RUN dnf -y install make git ksh gcc-c++ flex byacc bison rpm-build openssl python3 glibc-devel flex-devel libaio-devel zlib-devel elfutils-libelf-devel kernel-headers kernel-devel
 RUN dnf -y install ed # needed to edit passwd and group
 RUN dnf clean all
